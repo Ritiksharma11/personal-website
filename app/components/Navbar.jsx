@@ -48,7 +48,7 @@ const Navbar = () => {
                         <div className='flex flex-col bg-slate-800 fixed top-[3.1rem] right-1 md:hidden space-y-8 p-4 '>
                             {
                                 navItems.map((item, index) => (
-                                    <a className='hover:text-blue-300 ease-in-out duration-300 ' key={index} href={`#${item.page}`}>{item.label}</a>
+                                    <Link className='hover:text-blue-300 ease-in-out duration-300 ' onClick={() => setisOpen(false)} key={index} href={`#${item.page}`}>{item.label}</Link>
                                 ))
                             }
                         </div>
